@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vertical Centered Buttons</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center; /* center horizontally */
+        align-items: center; /* center vertically */
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+      }
+      .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 200px;
+      }
+      button {
+        padding: 12px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-container">
+      <button id="button1">Catering</button>
+      <button id="button2">02 Inspectorate Management</button>
+      <button id="button3">03 JPO Management</button>
+      <button id="button4">04 Quartering</button>
+      <button id="button5">05 L&HM</button>
+      <button id="button6">06 Trust and Fund System</button>
+    </div>
+
+    <script>
+      document.getElementById("button1").addEventListener("click", function () {
+                window.location.href =
+          "https://huggingface.co/spaces/RickieAustin4d/Catering"; // Replace with your URL
+      });
+      document.getElementById("button2").addEventListener("click", function () {
+        window.location.href =
+          "https://huggingface.co/spaces/RickieAustin4d/02_Inspectorate"; // Replace with your URL
+      });
+      document.getElementById("button3").addEventListener("click", function () {
+        window.location.href =
+          "https://huggingface.co/spaces/RickieAustin4d/03_JPO"; // Replace with your URL
+      });
+      document.getElementById("button4").addEventListener("click", function () {
+        window.location.href =
+          "https://huggingface.co/spaces/RickieAustin4d/04_Quartering"; // Replace with your URL
+      });
+      document.getElementById("button5").addEventListener("click", function () {
+        window.location.href =
+          "https://huggingface.co/spaces/RickieAustin4d/05_LHM"; // Replace with your URL
+      });
+      document.getElementById("button6").addEventListener("click", function () {
+        window.location.href =
+          "https://huggingface.co/spaces/RickieAustin4d/06_Trust"; // Replace with your URL
+      });
+    </script>
+  </body>
+</html>
